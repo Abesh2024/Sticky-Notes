@@ -33,7 +33,7 @@ main {
     display: flex;
     flex-direction: column; 
     align-items: center;
-    gap: 200px;
+    /* gap: 200px; */
     
 }
 
@@ -52,12 +52,12 @@ main {
 
     height: 3rem;
     width: 6rem;
-    border-radius: 12%;
+    border-radius: 10%;
     font-size: 1rem;
     font-weight: 700;
     border: none;
     border: 2px solid #3abff8;
-    background-color: rgb(8, 8, 142);
+    background-color: rgb(69, 69, 100);
     color: #000101;
     transition: all 0.2s;
     cursor: pointer; 
@@ -94,6 +94,7 @@ h1 {
 } */
 
 #remove-text {
+    padding-top: 200px;
     color: rgb(0, 0, 0);
     animation: slideLeft 2.5s ease-in-out 2s infinite normal both;
 
