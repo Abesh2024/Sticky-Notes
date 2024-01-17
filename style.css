@@ -5,9 +5,10 @@
 }
 
 main {
-    height: 100%;
-    width: 100vw;
+    width: 100%;
+    height: 100vh;
     font-family: "arial";
+    /* overflow-x: ; */
 }
 
 #page {
@@ -15,47 +16,95 @@ main {
 }
 
 #left {
-    width: 50vw;
+    width: 50%;
     height: 100vh;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(234, 226, 215);
+    background-color: #913f92;
 }
 
 #right {
-    width: 50vw;
+    width: 50%;
     height: 100vh;
-    border: 2px solid red;
-    /* display: flex;
-    flex-direction: column;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column; 
     align-items: center;
-    justify-content: center; */
+    gap: 200px;
+    
 }
 
 #t-area {
-    box-shadow: 10px 10px 10px red;
+    box-shadow: 10px 10px 10px black;
 }
 
 #btn {
-    margin-top: 2rem;
+    /* margin-top: 2rem;
     margin-right: 4rem;
     height: 2.5rem;
     width: 5rem;
     font-size: 1rem;
     border-radius: 1rem;
-    cursor: pointer;
+    cursor: pointer; */
+
+    height: 3rem;
+    width: 6rem;
+    border-radius: 12%;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border: 2px solid #3abff8;
+    background-color: rgb(8, 8, 142);
+    color: #000101;
+    transition: all 0.2s;
+    cursor: pointer; 
+     margin-top: 2rem;
+    margin-right: 4rem;
+    color: #FFF;
+}
+
+#btn:hover {
+    transform: translateX(-6px);
+    background-color: #08909c;
+    color: white;
 }
 
 #show-notes {
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
-    /* overflow-x: hidden; */
     overflow-y: scroll;
-    /* overflow-y: hidden; */
     height: 90vh;
-    margin-left: 1rem;
+    width: 95%;
+}
+
+/* #remove-text {
+    position: absolute;
+    top: 18rem;
+    left: 10rem;
+}
+
+h1 {
+    position: absolute;
+    top: 1rem;
+    left: 12rem;
+} */
+
+#remove-text {
+    color: rgb(0, 0, 0);
+    animation: slideLeft 2.5s ease-in-out 2s infinite normal both;
+
+    transform: translateX(-50px);
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-150px);
+    }
+    to {
+        transform: rotateX(0);
+    }
 }

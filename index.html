@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sticky Notes</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
 <body>
-    <main id="page">
+    <main id="page" class="animate__animated animate__bounce animate__delay-1s">
         <div id="left">
             <div id="note-color">
-                <textarea name="" id="t-area" cols="45" rows="12" placeholder="//Add some notes here"></textarea>
-                <input type="color" style="cursor: pointer;" id="color">
+                <textarea id="t-area" cols="45" rows="12" placeholder="//Add some notes here"></textarea>
+                <input type="color" value="#90EE91" style="cursor: pointer;" id="color">
             </div>
             <div id="for-btn">
                 <button id="btn">Add note</button>
+                <button class="clear-all">Clear all</button>
             </div>
         </div>
 
         <div id="right">
-            <h2>Your Notes</h2>
-            <h5 id="remove-text">You have not added a note yet</h5>
+            <h1>Your Notes</h1>
+            <h5 id="remove-text">"You have not added a note yet"</h5>
 
-            <div id="show-notes">
-
-            </div>
+            <div id="show-notes"></div>
         </div>
 
     </main>
@@ -32,4 +34,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
